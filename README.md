@@ -20,3 +20,20 @@ void String::trimLeft()
 		this->resize(k);
 	}
 }
+
+###############FUNCTION##############
+void String:: trimRight()
+{
+	int i = size - 1;
+	int check = 0;
+	while (data[i] == '\n' || data[i] == '\t' || data[i] == ' ')
+	{
+		check++;
+		i--;
+	}
+	if (check != 0)
+	{
+		size = size - check;
+		this->resize(size);
+	}
+}
