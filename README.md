@@ -37,3 +37,10 @@ void String:: trimRight()
 		this->resize(size);
 	}
 }
+
+##############FUNCTION##############
+void String::trim()
+{
+	this->trimLeft();
+	this->trimRight();
+}
